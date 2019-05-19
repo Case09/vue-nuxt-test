@@ -1,0 +1,16 @@
+Nuxt:
+	- Easy to add third party libraries (in nuxt.config) and in plugins directory just add export
+	- Nuxt.js implements Vues as state management in it's code and provides API around it
+		https://nuxtjs.org/guide/vuex-store
+	-	Fetch method can be used to populate Vuex store before page is rendered
+		https://nuxtjs.org/guide/vuex-store#the-fetch-method
+	- Pages can be easily added as .vue files to pages directory (works similar to Next)
+	- Routing is easily handled because nuxt uses vue-router by default and makes configuration based on pages directory
+		You can use <nuxt-link> to specify navigations in layouts folder
+		You can do nice page transitions out of the box with just by specifying certain classes in css or using <transition> component for JS only transitions
+		https://nuxtjs.org/examples/routes-transitions/
+	- To apply filters in templates add files to plugins directoy and insert it in nuxt.config, then they can be used in templates
+		https://nuxtjs.org/api/configuration-plugins
+	- You can overwrite router class names like nuxt-link-exact-active by providing router: {} in nuxt.config.js
+		https://nuxtjs.org/api/configuration-router
+	- You can create new folder in pages directory if you have /user/id for example, and provide _id.vue file, which will map to context.router.id inside the component
